@@ -29,7 +29,7 @@ public class Usuario implements UserDetails {
 	private String senha;
 	
 	@ManyToMany(fetch = FetchType.EAGER)
-	private List<Perfis> perfis = new ArrayList<>();
+	private List<Perfil> perfis = new ArrayList<>();
 
 	@Override
 	public int hashCode() {
